@@ -1,0 +1,82 @@
+#chat-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#mobile-chat-widget {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-chat-widget a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#hidden-widget {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    padding: 0;
+}
+
+#hidden-widget.open {
+    display: block;
+}
+
+#hidden-widget .button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+#hidden-widget .button-container a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#hidden-widget .button-container a span{
+  margin-left: 5px;
+}
+#hidden-widget .button-container img{
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+    #mobile-chat-widget {
+        display: flex;
+    }
+}
